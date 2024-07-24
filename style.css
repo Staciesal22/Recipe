@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4cff3;
+    text-align: center;
+}
+
+h1 {
+    background-color: #d49dfc;
+    color: #fff;
+    padding: 20px 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 2px solid #d49dfc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #bf66ff;
+    outline: none;
+    box-shadow: 0 0 10px #bf66ff;
+}
+
+#search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #bf66ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #9044c7;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #9044c7;
+}
+
+#recipes-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #d49dfc;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f5e0ff;
+}
+
+.recipe-card h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    color: #bf66ff;
+}
+
+.recipe-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipe-card li {
+    background-color: #ffe6e6;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card li:hover {
+    background-color: #e4cff3;
+    box-shadow: 0 0 10px #d49dfc;
+}
+
+
+
